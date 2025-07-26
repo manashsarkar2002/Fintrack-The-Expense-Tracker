@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Expense Tracker</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Bungee+Spice&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+    <h1>Expense Tracker</h1>
+    <div class="date-info" id="dateInfo">Loading date...</div>
+
+    <div class="balance">
+      Balance: ₹<span id="balance">0.00</span>
+    </div>
+
+    <div class="form-group">
+      <input type="text" id="desc" placeholder="Description (e.g. Rent, Freelance)" />
+      <input type="number" id="amount" placeholder="Amount" />
+      <select id="type">
+        <option value="income">Income</option>
+        <option value="expense">Expense</option>
+      </select>
+      <button class="add-btn" id="addBtn">Add Transaction</button>
+      <button class="reset-btn" id="resetBtn">Reset Tracker</button>
+    </div>
+
+    <div class="history">
+      <h2>Transaction History</h2>
+      <ul id="historyList"></ul>
+    </div>
+  </div>
+
+  <div class="footer">
+    Developed by: Manash Sarkar
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
